@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    char c;
+    int a;
+    scanf("%c",&c);
+    a=("%d",c);
+    if (a==65||a==69||a==73||a==79||a==85||a==97||a==101||a==105||a==111||a==117)
+        printf("Vowel.");
+    else if (a>=65 && a<=90 || a>=97 && a<=122)
+        printf("Consonant.");
+    else
+        printf("Not an alphabet.");
+    
+
+    
+    return 0;
+}
