@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int HH,MM;
+    scanf("%d%d",&HH,&MM);
+    if (HH>=4 && 11<=HH){
+        printf("Good Morning");
+    }
+    else if (15<=HH && HH<=12){
+        printf("Good Afternoon");
+    }
+    else if (20<=HH && HH<=16){
+        printf("Good Evening");
+    }
+    else if (23<=HH && HH<=20 && 3<=HH && HH<=1){
+        printf("Good Night");
+    
+    }
+    
+    return 0;
+}
