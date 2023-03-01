@@ -1,0 +1,18 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    int c,k,n;
+    scanf("%d",&c);
+    scanf("%d",&k);
+    scanf("%d",&n);
+    printf("%.0lf",pow(k,n)*c);
+    
+    
+    return 0;
+}
