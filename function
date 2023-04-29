@@ -1,0 +1,33 @@
+//cube of a number
+#include<stdio.h>
+int main(){
+    int a;
+    printf("a");
+    scanf("%d",&a);
+    int cube(int a);
+    int c=cube(a);
+    printf("%d",c);
+}
+int cube(int a){
+    int b=a*a*a;
+    return b;
+}
+
+//minimum and maximum
+#include<stdio.h>
+int mini(int a,int b){
+    return (a>b)?b:a;
+}
+int maxi(int a,int b){
+    return (a<b)?b:a;
+}   
+int main(){
+    int a,b;
+    printf("input a and b:");
+    scanf("%d%d",&a,&b);
+    int c=mini(a,b);
+    printf("mini =%d\n",c);
+    int d=maxi(a,b);
+    printf("maxi =%d",d);
+    
+}
