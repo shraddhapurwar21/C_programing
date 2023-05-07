@@ -1,0 +1,34 @@
+#include <stdio.h>
+int main(){
+    int m,n;
+    printf("m and n are");
+    scanf("%d%d",&m,&n);
+    int a[m][n];
+    for(int i=0;i<m;i++){
+        for(int j=0;j<n;j++){
+            printf("array [%d][%d]",i,j);
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for(int i=0;i<m;i++){
+        for(int j=0;j<n;j++){
+            printf("%d ",a[i][j]);
+        }
+        printf("\n");
+    }
+    for(int i=0;i<m;i++){
+        int row_sum=0;
+        for(int j=0;j<n;j++){
+            row_sum+=a[i][j];
+        }
+        printf("the sum of row is[%d]=%d\n",i,row_sum);
+    }
+    for(int i=0;i<m;i++){
+        int column_sum=0;
+        for(int j=0;j<n;j++){
+            column_sum+=a[j][i];
+        }
+        printf("the sum of column is[%d]=%d\n",i,column_sum);
+    }
+    return 0;
+}
