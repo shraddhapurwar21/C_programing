@@ -1,0 +1,56 @@
+#include <stdio.h>
+int main()
+{
+    //matrix1
+    int m,n;
+    printf("m and n are");
+    scanf("%d%d",&m,&n);
+    int a[m][n];
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            printf("array [%d][%d]",i,j);
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            printf("%d ",a[i][j]);
+        }
+        printf("\n");
+    }
+    //matrix 2
+    int p,q;
+    printf("p and q are");
+    scanf("%d%d",&p,&q);
+    int b[p][q];
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            printf("array [%d][%d]",i,j);
+            scanf("%d",&b[i][j]);
+        }
+    }
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            printf("%d ",b[i][j]);
+        }
+        printf("\n");
+    }
+    int flag=1;
+    for(int i=0;i<m;i++){
+        for(int j=0;j<n;j++){
+            if(m==p && n==q && a[i][j]==b[i][j]){
+                 flag=1;
+            }
+            else{
+                flag=0;
+                break;
+            }
+        }
+    }
+    if (flag==1)
+    printf("the matrices are equal");
+    else
+    printf("the matrices are not equal");
+        return 0;
+        
+}
