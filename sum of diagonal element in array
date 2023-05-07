@@ -5,20 +5,20 @@ int main()
     int m,n,sum=0;
     printf("m and n are");
     scanf("%d%d",&m,&n);
-    int a[n][n];
-    for(int i=0;i<n;i++){
+    int a[m][n];
+    for(int i=0;i<m;i++){
         for(int j=0;j<n;j++){
             printf("array [%d][%d]",i+1,j+1);
             scanf("%d",&a[i][j]);
         }
     }
-    for(int i=0;i<n;i++){
+    for(int i=0;i<m;i++){
         for(int j=0;j<n;j++){
             printf("%d ",a[i][j]);
         }
         printf("\n");
     }
-    for(int i=0;i<n;i++){
+    for(int i=0;i<m;i++){
         for(int j=0;j<n;j++){
             if(i==j){
                 sum=sum+a[i][j];
