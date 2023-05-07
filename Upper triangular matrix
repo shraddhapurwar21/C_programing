@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main(){
+    int m,n;
+    printf("m and n are");
+    scanf("%d%d",&m,&n);
+    int a[m][n];
+    for(int i=0;i<m;i++){
+        for(int j=0;j<n;j++){
+            printf("array [%d][%d]",i,j);
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for(int i=0;i<m;i++){
+        for(int j=0;j<n;j++){
+            printf("%d ",a[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\n");
+    for(int i=0;i<m;i++){
+        for(int j=0;j<n;j++){
+            if(i<j || i==j){
+                printf("%d ",a[i][j]);
+            }
+            else
+            printf("0 ");
+        }
+        printf("\n");
+    }
+    return 0;
+}
