@@ -1,0 +1,40 @@
+#include <stdio.h>
+void mini(int b[],int m){
+    int min=b[0];
+    for(int i=0;i<m;i++){
+        if(b[i]<min){
+            min=b[i];
+        }
+    }
+    printf("\nmini element in array is=%d",min);
+}
+void maxi(int b[],int m){
+    int max=b[0];
+    for(int i=0;i<m;i++){
+        if(b[i]>max){
+            max=b[i];
+        }
+    }
+    printf("\nmaxi element in array is=%d",max);
+}
+void display_array(int b[],int m){
+    for(int i=0;i<m;i++){
+        printf("%d ",b[i]);
+    }
+   
+    mini(b,m);
+    maxi(b,m);
+}
+int main()
+{
+    int m;
+    printf("m");
+    scanf("%d",&m);
+    int a[m];
+    for(int i=0;i<m;i++){
+        printf("array [%d]",i);
+        scanf("%d",&a[i]);
+    }
+    display_array(a,m);
+    return 0;
+}
